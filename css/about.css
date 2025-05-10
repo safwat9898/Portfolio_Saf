@@ -1,0 +1,101 @@
+/* About CSS */
+
+#main {
+  padding: 1% 7%;
+}
+.about-banner-icon1 {
+  position: absolute;
+  width: 5%;
+  top: 26%;
+  right: 80%;
+}
+
+.about-h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 3.6rem;
+}
+
+.about-box {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.about-image {
+  max-width: 100%;
+  width: 38%;
+}
+
+
+.about-content  p {
+  margin-bottom: 2%;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 80em) {
+    .about-image {
+      width: 44%;
+    }
+
+}
+
+@media screen and (max-width: 70em) {
+    .about-h1 {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-size: 3rem;
+    }
+    .about-image {
+      margin-top: 5%;
+  }
+
+}
+
+@media screen and (max-width: 60em) {
+    .about-h1 {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-size: 2rem;
+    }
+    .about-image {
+      margin-top: 5%;
+  }
+
+  .about-content  p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 50em) {
+  .about-h1 {
+      padding-top: 2%;
+      padding-bottom: 5%;
+      font-size: 3rem;
+  }
+  .about-image {
+      margin-top: 5%;
+      width: 100%;
+  }
+
+  .about-box {
+    flex-direction: column;
+    margin-top:20%;
+  }
+
+  .about-content  p {
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 40em) {
+
+  .about-box {
+    margin-top:30%;
+  }
+
+}
