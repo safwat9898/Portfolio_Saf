@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tapestry - Interaction Design/Mobile App Design</title>
+  
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/viff.css" rel="stylesheet">
+  <link href="css/project.css" rel="stylesheet">
+
+  <!--jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+ <!-- This is a JS code for burger functionality -->
+  <script>
+     document.addEventListener('DOMContentLoaded', function () {
+        // Function to toggle the visibility of the mobile nav links
+        function toggleMobileNavLinks() {
+            var navLinks = document.querySelector('.mobile-nav-links');
+            var burgerButton = document.querySelector('.burger-button');
+            var closeButton = document.querySelector('.close-button');
+
+            if (navLinks.style.display === 'none') {
+                navLinks.style.display = 'block';
+                burgerButton.style.display = 'none'; // Hide burger button
+                closeButton.style.display = 'block'; // Show close button
+            } else {
+                navLinks.style.display = 'none';
+                burgerButton.style.display = 'block'; // Show burger button
+                closeButton.style.display = 'none'; // Hide close button
+            }
+        }
+
+        // burger button
+        document.querySelector('.burger-button').addEventListener('click', function () {
+            toggleMobileNavLinks();
+        });
+
+        // =close button
+        document.querySelector('.close-button').addEventListener('click', function () {
+            toggleMobileNavLinks();
+        });
+
+        // mobile links - close menu if one of the links is clicked
+        var mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                toggleMobileNavLinks();
+            });
+        });
+    });
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-box">
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="assets/img/logo-safwat.svg" alt="Personalized logo for Md Safwat Qurib Ifti">
+      </a>
+      
+      <nav class="main-nav-style">  
+        <a class="nav-text" href="about.html">about</a>
+        <a class="nav-text" href="index.html#main">work</a>
+        <a class="nav-text" href="#contact">contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+      <div id="burger-menu">
+        <button class="burger-button"> ☰ </button>
+        <div class="mobile-nav-links">
+          <button class="close-button">&times;</button>
+          <a href="about.html">about</a>
+          <a href="index.html#main">work</a>
+          <a href="index.html#contact">contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-banner"> 
+      <img class="project-img" src="assets/img/tapestry-banner.png">
+    </div>
+  </header>
+  <section id="main">
+    <h1>Tapestry Book App</h1>
+    <h4>Interaction Design/Mobile App Design</h4>
+    <div class="project-info">
+      <div class="info-type">
+        <h5>Team</h5>
+        <p>Jae Eun Kim</p>
+        <p>Md Safwat Qurib Ifti</p>
+        <p>Valeriya Ten</p>
+      </div>
+
+      <div class="info-type">
+        <h5>Timeline</h5>
+        <p>June 2023 - July 2023</p>
+      </div>
+
+      <div class="info-type">
+        <h5>My Role</h5>
+        <p>UX Research</p>
+        <p>Logo Design </p>
+        <p>Visual Design</p>
+        <p>Wireframing</p>
+      </div>
+
+        <div class="info-type">
+        <h5>Tools</h5>
+        <p>Figma</p>
+        <p>Protopie</p>
+        <p>Adobe Illustrator</p>
+      </div>
+    </div>
+
+    <section id="overview">
+    <h4 class="subtitle">Project Overview</h4>
+    <h2>Redefining Gallery App for Seniors</h2>
+    <p class="project-content">This project was completed for the Interface Design course at <a class="text-link" href="https://www.sfu.ca/">Simon Fraser University</a>. Our design domain revolves around social isolation and loneliness among people within the same community or neighbourhood, especially affecting seniors over the age of 65.</p>
+   </section>
+
+
+    <section id="final">
+    <h2>Final Product</h2>
+    <div class="product-grid">
+        <img src="assets/img/tapestry-logo.png" alt="Tapestry Logo">
+        <img src="assets/img/tapestry-tutorial.png" alt="Tapesrty Tutorial">
+        <img src="assets/img/tapestry-gallery.png" alt="Gallery">
+        <img src="assets/img/tapestry-music.png" alt="Memories through music">
+    </div>
+
+    <p class="project-content">The final product includes a "Tutorial Mode","My Gallery" and "Community Gallery" and the ability to add music to your desired memorable pictures, designed in Figma and Prototyped in Protopie to help social isolation and loneliness among people within the same community or neighbourhood, especially affecting seniors over the age of 65 .</p>
+    <a class="text-link" href="https://cloud.protopie.io/p/44d34ff26cc9fc6197c2d8a7?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&playSpeed=1">View Prototype</a>
+   </section>
+
+   <section id="client">
+    <h4 class="subtitle">Intended Users</h4>
+     <h2>Tapestry Book Founders</h2>
+     <img class="viff" src="assets/img/intended-users.png" alt="Intended Users">
+     <p class="project-content">My team and I wanted to design an app that benefits our elderly and after some primary research, I came up with the idea of <span class="bold">Tapestry Book, a memory aid</span>. The core mission of this app is to preserve precious <span class="bold">community memories through visuals and supporting sounds </span>. In Tapestry Book, users can share nostalgic media and historical stories, creating a rich tapestry of collective experiences. The goal is to provide seniors with an immersive journey back in time, allowing them to relive their most cherished moments with all their senses.</p>
+   </section>
+
+   <section id="research">
+     <h2>Design Focus</h2>
+     <p class="highlight-content">How can we develop a mobile application specifically tailored for seniors aged 65 and above, who experience social isolation due to memory-related issues, that effectively helps them feel more connected to their community?</p>
+     <h4 class="subtitle">Findings</h4>
+     <h2>Research Process</h2>
+     <p class="project-content"><span class="bold">Based on my secondary research,</span>I aimed to explore the factors, so my teammate Jae and I wanted to help seniors feel connected to the community, as well as the ways technology currently aids them in achieving this. To gain insights, I conducted an online survey targeting 21 individuals(mostly related to Jae's family and friends), aged 65-74 and one individual aged 75+. The results revealed that 43% of respondents, or 9 out of 21, primarily use websites to access information and services. Meanwhile, 38%, or 8 respondents, rely on social media to connect with friends and family for similar purposes.These findings highlight the importance of accessible digital platforms for seniors in maintaining their social connections and accessing vital information.</p> 
+     <p><span class="bold">Additionally, the survey revealed that 52% of respondents, equating to 11 out of 21 participants, expressed concerns about data privacy when using digital technology or apps for social interaction. This indicates a need for secure and trustworthy digital solutions. The survey also identified common themes motivating seniors to participate in group activities, including shared interests and hobbies, consistent and regular communication, and fostering friendships</span>. These insights are crucial for designing a mobile application that not only addresses the social needs of seniors but also ensures their comfort and security when using digital tools.</p>
+
+   </section>
+
+   <section id="passport">
+    <h2>Content Strategy</h2>
+    <p class="project-content">As a starting point, <span class="bold">I suggested building a sitemap to visualize our app structure</span>. This approach helped us narrow down the things that is applicable within our time and also provided us a structure of how we want our app to look.</p>
+    <img class="sitemap" src="assets/img/sitemap-tapestry.png" alt="Sitemap">
+    <p class="caption">Sitemap</p>
+     <p class="project-content">After you download the app, you make an account and then in the hamburger menu you will come across "My Gallery" where you can share your own pictures and keep it private. Another option called the "Community Gallery" allows you to connect to people within your neighbourhood by looking up images and liking and commenting on them. It also allows you to share your images to the community. Aside from that you are allowed to select songs from a playlist that aligns with a picture of your liking to commemorate that particular moment in the near future.<span class="bold"> Tapestry book is like a phone book that allows you to connect to your peers but also keep things private to yourself when you feel like it.</span></p>
+   </section>
+
+  <section id="design">
+    <h4 class="subtitle">First Iteration</h4>
+    <h2>Mockups</h2>
+    <p class="project-content">During the initial design process, I collaborated with my teammate, Valeriya Ten, to create the first mockup iterations for the Gallery and Community Gallery.</p>
+    <img class="lp" src="assets/img/tapestry-mygallery.png" alt="My Gallery">
+    <p class="caption">Tapestry Book - My Gallery</p>
+    <img class="lp-2" src="assets/img/tapestry-communitygallery.png" alt="Community Gallery">
+    <p class="caption">Tapestry Book- Communtiy Gallery</p>
+  </section>
+
+  <section id="feedback">
+    <h4 class="subtitle">Post-Critique Feedback</h4>
+    <h2>Challenge</h2>
+    <p class="project-content">"Our teaching team observed that the initial mockups didn't include sufficient interactive elements, which could result in users not engaging actively with the app, potentially affecting user retention. Additionally, they noted that the app might be unclear to new users, as it doesn't provide clear guidance or onboarding instructions on navigating the app or what steps to take after creating an account."</p>
+  </section>
+
+   <section id="art">
+    <h4 class="subtitle">Design</h4>
+    <h2>Design Interactions</h2>
+    <img class="moodboard" src="assets/img/interactions.png" alt="Design Interactions">
+    <p class="caption">Design Interactions Updated</p>
+    <p class="project-content">After discussing the feedback with the team,we have made several interface improvements to enhance user engagement and streamline the experience <span class="bold"> To help new users, I came up with the tutorial mode that provides an overview of the app's basic functionalities. I added the photo interactions which have been enriched with options to edit captions, assign predefined categories like "Period" and "Season," and add audio suggestions based on these categories, enhancing the thematic experience. Additionally, users can see their name and profile picture alongside each post, and like buttons are now available for engagement.</span>,Jae worked on the  The Community page which is now the main landing page, replacing the toggle functionality, which promotes active participation. Valeriya worked on The "My Gallery" section, accessible through the menu, allows users to view and manage their profiles and photos. During our design process, <span class="bold">I also selected the colour scheme and typeface</span> based on our research and the overall feel we wanted to achieve. <span class="bold">I chose <a class="text-link" href="https://www.typewolf.com/lato" target="_blank">Lato</a> as one of the main typefaces</span> as it brings a unique character through imperfections and stands out with its quirky charm.</p>
+   </section>
+
+   <section id="mockups">
+    <h2>Final Mockups</h2>
+    <h3 class="h3-title">Landing Page</h3>
+    <p class="project-content">As a team, we collaborated on the final prototype on Protopie, we split up the tasks revising the initial version to update the new features. This was achieved by incorporating a hamburger menu bar when the user logs in and allows them to choose either Community Gallery, My Gallery or Tutorial Mode.In the Community Gallery we added the feature which allows user to browse, sort, and interact with photos. This platform enables users to connect by comparing memories and adding sounds to photos, enhancing both auditory and visual memory aids. The interface includes personalization features, allowing users to upload photos, categorize them, and add descriptions and sounds in a single step. To ensure accessibility, the design features large, clear buttons and a tutorial mode that guides users through the app's functionalities, making it easy for them to navigate and engage with the community. <span class="bold">I was in charge of designing the logo, which reflects Tapestry Book's focus on shared memories. I developed the tutorial mode to provide clear guidance for users and managed the integration of music in the gallery, allowing users to enhance their photos with sounds. These contributions were essential in improving the app's overall functionality and user engagement.</span> Now, we highlight the key features added in the final product that significantly enhanced its overall appeal and functionality. These enhancements have not only enriched the user experience but also ensured that Tapestry Book meets the diverse needs of its audience, creating a more engaging and accessible platform.</p>
+    <img class="mockups" src="assets/img/final-tapestry-gallery.png" alt="Final Gallery">
+    <img class="mockups" src="assets/img/final-Logo-design.png" alt="Final Logo">
+    <img class="mockups" src="assets/img/final-photo-customization.png" alt="Final Photo Customization">
+
+    <h3 class="h3-title">Tutorial Mode</h2>
+    <p class="project-content">The Tuorial Mode is designed to help users grasp the basic functionalities and features of the app. It provides essential guidance on navigating to "My Gallery," where users can add picturesand then a pick music or sound that relates to that picture and save it in that section. Additionally, the tutorial demonstrates how to return to the "Community Gallery," allowing users to view other people's profiles and engage with the broader community. This initial guidance is key to making a positive first impression and enabling users to start using the app efficiently and confidently.</p>
+    <img class="mockups" src="assets/img/final-tutorialmode.png" alt="Final Tutorial Mode">
+
+
+   </section>
+
+
+   <section id="takeaways">
+    <h4 class="subtitle">Takeaways</h4>
+    <h2>What Did I Learn?</h2>
+    <p class="project-content">This project provided me with valuable insights into the perspectives of seniors, particularly those aged 60 and above. It challenged my assumptions about design aesthetics, especially with the use of skeuomorphic elements, which are often seen as outdated in contemporary design. Surprisingly, our senior participants found these familiar, real-world inspired designs intuitive and user-friendly, highlighting the importance of considering the generational experiences of the user base.</p>
+    <p>However, we encountered challenges regarding cognitive load. Despite our efforts to simplify navigation with linear scene transitions, some participants found the app's steps unnecessarily complex. This experience underscored the necessity of balancing functional complexity with simplicity in the user journey, particularly for seniors. It emphasized the need to design with a focus on streamlined functionality, ensuring that the interface remains accessible and easy to navigate, while still meeting the needs of the users. This takeaway is crucial for creating inclusive designs that cater to diverse user groups.</p>
+    <div class="next-box">
+      <h3>See Other Projects</h3>
+      <a class="text-link" href="viff.html">view [Digital Passport Program]</a>
+    </div>
+
+   </section>
+    
+</section>
+
+<footer>
+    <div class="footer-box">
+      <div class="contact" id="contact">
+        <h3>Get in Touch</h3>
+        <p>Let's grab a Bite!</p>
+        <p><a class ="text-link" href="mailto:safwatifti@gmail.com">safwatifti@gmail.com</a></p>
+      </div>
+
+
+      <div class="links">
+        <h3>Links</h3>
+        <p>
+          <a class ="text-link" href="style-guide.html">Style Guide</a>
+        </p>
+        <p>
+          <a class ="text-link" href="style-guide.html#citations">Citations</a>
+        </p>
+           <p>
+          <a class ="text-link" href="https://">Git Repository</a>
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>© Copyright 2024 Md Safwat Qurib Ifti. Designed and developed by me. All rights reserved.</p>
+      </div>
+    </div>
+
+    
+  </footer>
+</body>
+</html>
